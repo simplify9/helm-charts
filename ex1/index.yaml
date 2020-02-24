@@ -3,7 +3,16 @@ entries:
   ex1:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-24T10:32:53.962108969Z"
+    created: "2020-02-24T10:44:32.571382266Z"
+    description: A Helm chart for Kubernetes
+    digest: 5dd954a9e98b393890e5cfd73e934030b1a1f094aa1518fc3492241856e558d5
+    name: ex1
+    urls:
+    - https://simplify9.github.io/helm-charts/ex1-4904.tgz
+    version: "4904"
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-02-24T10:44:32.571055262Z"
     description: A Helm chart for Kubernetes
     digest: 4005c94a402cb59325e95cb9eb36811548bc67191e1159d77ba22fcbafd5a9ac
     name: ex1
@@ -12,7 +21,7 @@ entries:
     version: "4897"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-24T10:32:53.961896368Z"
+    created: "2020-02-24T10:44:32.570792758Z"
     description: A Helm chart for Kubernetes
     digest: 64a627dfdbf073b6cbc18d750db514dd16641dff50f2f7e824e457e94936c1e2
     name: ex1
@@ -21,7 +30,7 @@ entries:
     version: "4896"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-24T10:32:53.961662867Z"
+    created: "2020-02-24T10:44:32.570532355Z"
     description: A Helm chart for Kubernetes
     digest: 31cd5ce0e2048b373cc992d10272fd01438ab34b2d415ae901212acb7aa9596a
     name: ex1
@@ -30,7 +39,7 @@ entries:
     version: "4895"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-24T10:32:53.961412767Z"
+    created: "2020-02-24T10:44:32.570255051Z"
     description: A Helm chart for Kubernetes
     digest: 0b5b8e32729cf5ce665d8f820679ca5b0a458c6919ea3a132022d9962432d48f
     name: ex1
@@ -39,11 +48,11 @@ entries:
     version: "4894"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-24T10:32:53.961117266Z"
+    created: "2020-02-24T10:44:32.569974348Z"
     description: A Helm chart for Kubernetes
     digest: e2930243d0b8a085980967b6b27cadd4259724c7be70cb38d86748e5e781a2e6
     name: ex1
     urls:
     - https://simplify9.github.io/helm-charts/ex1-4892.tgz
     version: "4892"
-generated: "2020-02-24T10:32:53.960629464Z"
+generated: "2020-02-24T10:44:32.569497041Z"
