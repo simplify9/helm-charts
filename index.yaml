@@ -3,7 +3,7 @@ entries:
   ex1:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.640256211Z"
+    created: "2020-03-21T12:15:46.857915654Z"
     description: A Helm chart for Kubernetes
     digest: e79ac1f0d3da69c3a3faeed84ea48967d7ab48713bf736dff68d16a2e00f1e41
     name: ex1
@@ -12,7 +12,7 @@ entries:
     version: "4925"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.639907511Z"
+    created: "2020-03-21T12:15:46.857543659Z"
     description: A Helm chart for Kubernetes
     digest: dbcd784ef3aa74cd2f08b2e50ff4ff38d2c66747c9d620896fe42601868d1802
     name: ex1
@@ -21,7 +21,7 @@ entries:
     version: "4924"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.63970921Z"
+    created: "2020-03-21T12:15:46.857279464Z"
     description: A Helm chart for Kubernetes
     digest: f7c4b94e766747e52356fe817c5e0a14095ab308d08704981b6e989532bfa465
     name: ex1
@@ -30,7 +30,7 @@ entries:
     version: "4923"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.63950941Z"
+    created: "2020-03-21T12:15:46.856993968Z"
     description: A Helm chart for Kubernetes
     digest: ca14f8dacb31a1b6384b50d58592633a45475e15f86e595929b022ab07e17bcb
     name: ex1
@@ -39,7 +39,7 @@ entries:
     version: "4922"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.639283009Z"
+    created: "2020-03-21T12:15:46.856666773Z"
     description: A Helm chart for Kubernetes
     digest: 5d48043fa050fa2d70dafdbacfccf8605c8de73448f099d65f9b3ab479fe0479
     name: ex1
@@ -48,7 +48,7 @@ entries:
     version: "4921"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.639038509Z"
+    created: "2020-03-21T12:15:46.856426677Z"
     description: A Helm chart for Kubernetes
     digest: aa5d9d5e4c633423d449e6114d290abfb4e8df01f1a63c39fb7feca7f9bfb7c2
     name: ex1
@@ -57,7 +57,7 @@ entries:
     version: "4920"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.638805308Z"
+    created: "2020-03-21T12:15:46.856160281Z"
     description: A Helm chart for Kubernetes
     digest: 125f9a00d76b8f182ba5cae6ec1e3488e71846be89418fa77f71ba5f644c0850
     name: ex1
@@ -66,7 +66,7 @@ entries:
     version: "4911"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.638572408Z"
+    created: "2020-03-21T12:15:46.855924885Z"
     description: A Helm chart for Kubernetes
     digest: 59e8d92c58fa33a46837280f2a90ceac407e7e3cb1db83759b12d751777694fa
     name: ex1
@@ -76,7 +76,16 @@ entries:
   infolink:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.642455216Z"
+    created: "2020-03-21T12:15:46.859968121Z"
+    description: A Helm chart for Kubernetes
+    digest: f72d46d31862e35fd6fa2c65a474adb10cc7dcdce74501c9759d84145f72a2bd
+    name: infolink
+    urls:
+    - https://simplify9.github.io/helm-charts/infolink/infolink-5361.tgz
+    version: "5361"
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-03-21T12:15:46.859674826Z"
     description: A Helm chart for Kubernetes
     digest: 9822bf5556634ed32b74c9b167f966ca60a305ab763c10530af9b2985129c942
     name: infolink
@@ -85,7 +94,7 @@ entries:
     version: "5265"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.642147615Z"
+    created: "2020-03-21T12:15:46.85941093Z"
     description: A Helm chart for Kubernetes
     digest: 75acc3e46c7f9d2cade64fe06cc306bb6069ab8986e862189484bcc1e03a6130
     name: infolink
@@ -94,7 +103,7 @@ entries:
     version: "5258"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.641735014Z"
+    created: "2020-03-21T12:15:46.859143934Z"
     description: A Helm chart for Kubernetes
     digest: a1042cfeaf74d312653652475fc643f12472c3f182b6b2d7f3e27a4761099ea6
     name: infolink
@@ -103,7 +112,7 @@ entries:
     version: "5256"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.641419614Z"
+    created: "2020-03-21T12:15:46.858854939Z"
     description: A Helm chart for Kubernetes
     digest: 6e0aedc6aaf70637397e8476282d6ff5f7a6b1a623c8a3e618133a385294db92
     name: infolink
@@ -112,7 +121,7 @@ entries:
     version: "5252"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.641033713Z"
+    created: "2020-03-21T12:15:46.858525244Z"
     description: A Helm chart for Kubernetes
     digest: 32e00a53f1770dcbc5c9050a15889ba55c7128bcf974626e729f410c0e165a25
     name: infolink
@@ -121,11 +130,11 @@ entries:
     version: "5151"
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-03-15T21:39:57.640612812Z"
+    created: "2020-03-21T12:15:46.858215149Z"
     description: A Helm chart for Kubernetes
     digest: f20d575209bd709476fe0ca6c870f85771d3faa708deb13723037be23d042b51
     name: infolink
     urls:
     - https://simplify9.github.io/helm-charts/infolink/infolink-4967.tgz
     version: "4967"
-generated: "2020-03-15T21:39:57.638058907Z"
+generated: "2020-03-21T12:15:46.855532591Z"
