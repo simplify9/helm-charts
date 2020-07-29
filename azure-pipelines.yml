@@ -10,9 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  # Container registry service connection established during pipeline creation
-
-  tag: '$(Build.BuildId)'
+  - group: Chartmuseum
+  - name: tag
+    value: '$(Build.BuildId)'
 
 steps:
 
