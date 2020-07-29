@@ -23,6 +23,27 @@ steps:
       checkLatestHelmVersion: false
       installKubectl: false
 
+  - task: Bash@3
+    displayName: 'Package charts'
+    inputs:
+      targetType: 'inline'
+      script: |
+        for d in */
+        do 
+          helm package ./$d
+        done
+
+  - task: Bash@3
+    displayName: 'Upload to chart museum'
+    inputs:
+      targetType: 'inline'
+      script: |
+        for f in *.tgz
+        do 
+          echo "Uploading @$f"
+          curl --data-binary "@$f" https://charts.sf9.io/api/charts --user $(User):$(Password)
+        done   
+
   
 
 
