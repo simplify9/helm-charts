@@ -17,11 +17,11 @@ variables:
 steps:
 
   - task: HelmInstaller@0
-    displayName: 'Install Helm latest'
+    displayName: 'Install Helm 3.2.4'
     inputs:
-      helmVersion: '3.1.0'
+      helmVersion: '3.2.4'
       checkLatestHelmVersion: false
-      installKubectl: true
+      installKubectl: false
 
   
 
