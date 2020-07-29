@@ -1,0 +1,28 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  # Container registry service connection established during pipeline creation
+
+  tag: '$(Build.BuildId)'
+
+steps:
+
+  - task: HelmInstaller@0
+    displayName: 'Install Helm latest'
+    inputs:
+      helmVersion: '3.1.0'
+      checkLatestHelmVersion: false
+      installKubectl: true
+
+  
+
+
