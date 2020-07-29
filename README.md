@@ -5,6 +5,10 @@ This chart bootstraps a dotnet core project deployment on a Kubernetes cluster u
 - Kubernetes 1.12+
 - Helm 3.0+
 
+## Adding Helm Repo
+
+TBD
+
 
 ## Installing the Chart
 
