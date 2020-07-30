@@ -1,0 +1,14 @@
+apiVersion: v2
+description: A Helm chart for Kubernetes
+name: basic
+version: 0.1.0
+keywords:
+  - simple chart
+  - dotnetcore chart
+sources:
+  - https://github.com/simplify9/helm-charts
+maintainers:
+  - name: Simplify9
+    email: info@simplify9.com
+annotations:
+  category: Infrastructure
