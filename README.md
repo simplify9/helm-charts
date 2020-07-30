@@ -38,4 +38,4 @@ The command removes all the Kubernetes components associated with the chart and 
 ## Available charts
 | ChartName                 | Description                                          |
 |---------------------------|------------------------------------------------------|
-| [basic](https://github.com/simplify9/tree/master/basic)                 | A basic chart for basic deployment                   |
+| [basic](./basic)                 | A basic chart for basic deployment                   |
