@@ -1,5 +1,5 @@
 # Simply Charts 
-Simply charts is a library that includes helm charts that helps with deployments on a Kubernetes cluster using the Helm package manager.
+Simply charts is a library of helm charts that helps with deployments on a Kubernetes cluster using the Helm package manager.
 
 ## Prerequisites
 - Kubernetes 1.12+
@@ -38,4 +38,4 @@ The command removes all the Kubernetes components associated with the chart and 
 ## Available charts
 | ChartName                 | Description                                          |
 |---------------------------|------------------------------------------------------|
-| [basic](https://github.com/simplify9/tree/master/basic)                 | A basic chart for basic deployment                   |
+| [basic](./basic)                 | A basic chart for basic deployment                   |
