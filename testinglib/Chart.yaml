@@ -1,0 +1,11 @@
+apiVersion: v2
+description: A Helm chart for Kubernetes
+name: testinglib
+version: 0.1.0
+
+
+
+dependencies:
+- name: swlib
+  version: 0.1.0
+  repository: file://../swlib
