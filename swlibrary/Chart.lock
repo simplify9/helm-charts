@@ -1,6 +1,0 @@
-dependencies:
-- name: swlib
-  repository: file://../swlib
-  version: 0.0.1
-digest: sha256:babe0689247270804a586fc29c1680b51b255696fc3673d92b6438cd32f1b0bd
-generated: "2020-08-08T16:31:17.815242+03:00"
