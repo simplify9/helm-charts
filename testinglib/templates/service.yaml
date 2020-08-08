@@ -1,0 +1,4 @@
+{{- include "swlib.service" (list . "{{ .Chart.Name }}.service") -}}
+{{- define "{{ .Chart.Name }}.service" -}}
+
+{{- end -}}

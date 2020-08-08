@@ -1,4 +1,4 @@
-{{- define "swlib.deployment.tpl" -}}
+{{- define "{{ .Chart.Name }}.deployment.tpl" -}}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -135,6 +135,6 @@ spec:
 
 {{- end -}}
 
-{{- define "swlib.deployment" -}}
-{{- include "swlib.util.merge" (append . "swlib.deployment.tpl") -}}
+{{- define "{{ .Chart.Name }}.deployment" -}}
+{{- include "{{ .Chart.Name }}.util.merge" (append . "{{ .Chart.Name }}.deployment.tpl") -}}
 {{- end -}}
