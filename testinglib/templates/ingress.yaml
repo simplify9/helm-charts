@@ -1,0 +1,6 @@
+{{- if .Values.ingress.enabled -}}
+{{- include "swlib.ingress" (list .  "{{ .Chart.Name }}.ingress") -}}
+{{- end -}}
+{{- define   "{{ .Chart.Name }}.ingress" -}}
+
+{{- end -}}

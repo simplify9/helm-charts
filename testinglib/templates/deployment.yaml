@@ -1,4 +1,4 @@
-{{- include "swlib.deployment" (list .  "testinglib.deployment") -}}
-{{- define   "testinglib.deployment" -}}
+{{- include "swlib.deployment" (list .  "{{ .Chart.Name }}.deployment") -}}
+{{- define   "{{ .Chart.Name }}.deployment" -}}
 
 {{- end -}}

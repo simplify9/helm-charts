@@ -23,7 +23,7 @@ probes:
   enabled: false
 
 ingress:
-  enabled: false
+  enabled: true
   annotations:
     # kubernetes.io/tls-acme: "true"
   path: /
@@ -53,7 +53,7 @@ tolerations: []
 affinity: {}
 
 # db is the connection string for the database
-db: ""
+db: "abc123"
 
 dbConnectionStringName: ConnectionStrings__db
 
@@ -67,8 +67,8 @@ global:
     audience: t
 
   logger:
-    esUrl: ""
-    esUser: ""
-    esPassword: ""
+    esUrl: "1a"
+    esUser: "1a"
+    esPassword: "1a"
 
 
