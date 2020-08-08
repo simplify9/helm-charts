@@ -1,4 +1,4 @@
-name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+name: $(version)
 
 trigger:
 - master
@@ -10,39 +10,46 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  - group: Chartmuseum
-  - name: tag
-    value: '$(Build.BuildId)'
+- group: Chartmuseum
+- name: tag
+  value: '$(Build.BuildId)'
+- name: major
+  value: 2
+- name: minor
+  value: 0
+- name: version
+  value: $[format('{0}.{1}.{2}', variables['major'], variables['minor'], counter(format('{0}.{1}', variables['major'], variables['minor']), 0))]
+
 
 steps:
 
-  - task: HelmInstaller@0
-    displayName: 'Install Helm 3.2.4'
-    inputs:
-      helmVersion: '3.2.4'
-      checkLatestHelmVersion: false
-      installKubectl: false
+- task: HelmInstaller@0
+  displayName: 'Install Helm 3.2.4'
+  inputs:
+    helmVersion: '3.2.4'
+    checkLatestHelmVersion: false
+    installKubectl: false
 
-  - task: Bash@3
-    displayName: 'Package charts'
-    inputs:
-      targetType: 'inline'
-      script: |
-        for d in */
-        do 
-          helm package ./$d
-        done
+- task: Bash@3
+  displayName: 'Package charts'
+  inputs:
+    targetType: 'inline'
+    script: |
+      for d in */
+      do 
+        helm package ./$d --version $(version) --app-version $(version)
+      done
 
-  - task: Bash@3
-    displayName: 'Upload to chart museum'
-    inputs:
-      targetType: 'inline'
-      script: |
-        for f in *.tgz
-        do 
-          echo "Uploading @$f"
-          curl --data-binary "@$f" https://charts.sf9.io/api/charts --user $(User):$(Password)
-        done   
+- task: Bash@3
+  displayName: 'Upload to chart museum'
+  inputs:
+    targetType: 'inline'
+    script: |
+      for f in *.tgz
+      do 
+        echo "Uploading @$f"
+        curl --data-binary "@$f" https://charts.sf9.io/api/charts --user $(User):$(Password)
+      done   
 
   
 
