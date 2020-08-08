@@ -48,7 +48,7 @@ steps:
       for f in *.tgz
       do 
         echo "Uploading @$f"
-        curl --data-binary "@$f" https://charts.sf9.io/api/charts --user $(User):$(Password)
+        curl --data-binary "@$f" https://charts.sf9.io/api/charts --user $(CmUser):$(CmPassword)
       done   
 
   
