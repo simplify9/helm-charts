@@ -47,6 +47,9 @@ spec:
             - name: ASPNETCORE_ENVIRONMENT
               value: {{ .Values.global.environment }}
 
+            - name: ApiUrl
+              value: "http://{{ template project.fullname . }}/cqapi/"
+
             - name: SwLogger__ApplicationName
               value: {{ template "project.fullname" . }}
 
