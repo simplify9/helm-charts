@@ -1,4 +1,6 @@
+{{- define "swlib.ingress.tpl" -}}
 {{- if .Values.ingress.enabled -}}
+
 {{- $fullName := include "project.fullname" . -}}
 {{- $servicePort := .Values.service.port -}}
 {{- $ingressPath := .Values.ingress.path -}}
@@ -53,7 +55,9 @@ spec:
         {{- end -}}
   {{- end }}
 {{- end }}
+{{- end -}}
 
-{{- define "{{ .Chart.Name }}.ingress" -}}
-{{- include "{{ .Chart.Name }}.util.merge" (append . "{{ .Chart.Name }}.ingress.tpl") -}}
+
+{{- define "swlib.ingress" -}}
+{{- include "swlib.util.merge" (append . "swlib.ingress.tpl") -}}
 {{- end -}}
