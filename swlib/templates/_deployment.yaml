@@ -48,7 +48,7 @@ spec:
               value: {{ .Values.global.environment }}
 
             - name: ApiUrl
-              value: "http://{{ template project.fullname . }}/cqapi/"
+              value: "http://{{ template "project.fullname" . }}/cqapi/"
 
             - name: SwLogger__ApplicationName
               value: {{ template "project.fullname" . }}
