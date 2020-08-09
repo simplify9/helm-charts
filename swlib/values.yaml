@@ -55,7 +55,7 @@ affinity: {}
 # db is the connection string for the database
 db: ""
 
-dbConnectionStringName: ConnectionStrings__db
+#dbConnectionStringName: ConnectionStrings__db
 
 global:
 

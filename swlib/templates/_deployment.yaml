@@ -47,9 +47,6 @@ spec:
             - name: ASPNETCORE_ENVIRONMENT
               value: {{ .Values.global.environment }}
 
-            - name: ApiUrl
-              value: "http://{{ template "project.fullname" . }}/cqapi/"
-
             - name: SwLogger__ApplicationName
               value: {{ template "project.fullname" . }}
 
@@ -80,31 +77,45 @@ spec:
                   key: esPassword
             {{- end }}
 
+            {{- if .Values.db }}
             - name: {{ .Values.dbConnectionStringName }} 
               valueFrom:
                 secretKeyRef:
                   name: {{ template "project.fullname" . }}
                   key: db
+            {{- end }}
 
+            {{- if .Values.global.token.key }}
             - name: Token__Key
               valueFrom:
                 secretKeyRef:
                   name: {{ template "project.fullname" . }}
                   key: tokenKey
+            {{- end }}
 
+            {{- if .Values.global.token.issuer }}
             - name: Token__Issuer
               valueFrom:
                 secretKeyRef:
                   name: {{ template "project.fullname" . }}
                   key: tokenIssuer
+            {{- end }}
 
+            {{- if .Values.global.token.audience }}
             - name: Token__Audience
               valueFrom:
                 secretKeyRef:
                   name: {{ template "project.fullname" . }}
                   key: tokenAudience
+            {{- end }}
 
-
+            {{- if .Values.global.bus.rabbitUrl }}
+            - name: ConnectionStrings__RabbitMQ
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "project.fullname" . }}
+                  key: busRabbitUrl
+            {{- end }}
 
             {{- $root := . }}
             {{- range $key, $values := .Values.secrets }}
