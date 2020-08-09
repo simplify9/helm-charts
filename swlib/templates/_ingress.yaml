@@ -54,6 +54,6 @@ spec:
   {{- end }}
 {{- end }}
 
-{{- define "{{ .Chart.Name }}.ingress" -}}
-{{- include "{{ .Chart.Name }}.util.merge" (append . "{{ .Chart.Name }}.ingress.tpl") -}}
+{{- define "swlib.ingress" -}}
+{{- include "swlib.util.merge" (append . "swlib.ingress.tpl") -}}
 {{- end -}}
